@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesion2</title>
+</head>
+<body>
+
+    <form id="form1" action="index.html" method="post">
+        <h2>Our form</h2>
+
+        <fieldset>
+            <legend>Set your personal data</legend>
+
+            <div style="margin: 5px;">
+            <input type="text" id ="form1_name" name="name" value="" placeholder="Pepe" pattern="[a-zA-Z]+" minlength="3" maxlength="20" required>
+            </div>
+
+            <div style="margin: 5px;">
+            <input type="text" id ="form1_surname" name="surname" value="" placeholder="Hernandez" pattern="[a-zA-Z]+" minlength="3" maxlength="20" required>
+            </div>
+
+            <div style="margin: 5px;">
+            <input type="email" id="form1_email" name="email" value="" placeholder="pepe@gmail.com" required>
+            </div>
+
+            <div style="margin: 5px;">
+            <input type="tel" id="form1_tel" name="tel" value="" placeholder="666666666" pattern="[0-9]+" required>
+            </div>
+
+            <div style="margin: 5px;">
+            <select id="form1_country" name="country">
+                <option value="spain">Spain</option>
+                <option value="france">France</option>
+                <option value="italy">Italy</option>
+                <option value="england">England</option>
+            </select>
+            </div>
+
+            <div style="margin: 5px; margin-top: 10px;">
+            <input type="submit" value="Send">
+            </div>
+        </fieldset>
+    </form>
+
+    <table border="1" style="border: 1px solid black; margin-top:20px; padding: 0px; text-align: center;">
+        <caption>Table example</caption>
+        <thead>
+            <tr>
+                <td>Day</td>
+                <td>Temperature</td>
+                <td>Climate</td>
+                <td>Humidity</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>10</td>
+                <td>Sunny</td>
+                <td rowspan="2">5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>8</td>
+                <td>Rainy</td>
+            </tr>
+         </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">3</td>
+                <td>Cloudy</td>
+                <td>3</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>

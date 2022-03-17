@@ -1,0 +1,6 @@
+¿Qué beneficios nos trae el debugging?
+
+Las tres primeras respuestas son correctas:
+    - Inspección de variables.
+    - Análisis del código tras encontrar un error.
+    - Ejecución paso a paso.

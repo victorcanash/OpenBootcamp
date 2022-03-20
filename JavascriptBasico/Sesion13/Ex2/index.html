@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesion 13</title>
+</head>
+<body style="margin: 0 auto;">
+
+    <div style="display: flex; flex-direction: column;align-items: center; justify-content: flex-start; position: absolute; width: 100%; height: 100%; padding: 15px;">
+        <h1>Adivina la direccion de la foto copiando toda la respuesta</h1>
+        <img src="resources/torre-agbar.jpg" alt="Torre Agbar, Barcelona, Spain">
+        <div>
+            <p class="correct">1. Avinguda Diagonal, 211, 08018 Barcelona</p>
+            <p class="incorrect">2. C/ de Mallorca, 401, 08013 Barcelona</p>
+            <p class="incorrect">3. Plaça Rosa Del Vents 1, Final, Passeig de Joan de Borbó, 08039 Barcelona</p>
+        </div>
+    </div>
+
+    <script>
+
+    const alertWin = () => {
+        alert("Respuesta correcta");
+    };
+    const alertLose = () => {
+        alert("Respuesta incorrecta");
+    };
+
+    document.addEventListener("DOMContentLoaded", function load() {
+        let incorrects = document.querySelectorAll(".incorrect");
+        incorrects.forEach(element => {
+            element.addEventListener("copy", alertLose);
+        });
+        let correct = document.getElementsByClassName("correct");
+        correct[0].addEventListener("copy", alertWin);
+    }, false);
+
+    </script>
+    
+</body>
+</html>

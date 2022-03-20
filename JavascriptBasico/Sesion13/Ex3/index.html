@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesion13</title>
+</head>
+<body style="margin: 0 auto;">
+    
+    <div style="display: flex; flex-direction: column;align-items: center; justify-content: flex-start; position: absolute; width: 100%; height: 100%; padding: 15px;">
+        <div id="figure" style="width: 300px; height: 300px; background-color: grey; border: 1px solid black;"></div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded",function load(){
+            let figure = document.getElementById("figure");
+            figure.addEventListener("click", onClick);
+            figure.addEventListener("dblclick", onDoubleClick);
+        }, false);
+        
+        const onClick = () => {
+            figure.style.backgroundColor = randomColor();
+        };
+
+        const onDoubleClick = () => {
+            figure.style.borderRadius = "100%";
+        };
+
+        const randomColor = () => {
+            return "#" + Math.floor(Math.random()*16777215).toString(16);;
+        };
+
+    </script>
+
+</body>
+</html>
